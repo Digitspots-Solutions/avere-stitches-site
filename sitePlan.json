@@ -1,0 +1,42 @@
+{
+  "businessName": "AVERE STITCHES",
+  "industry": "Fashion and Creative Design",
+  "tone": "creative and sophisticated",
+  "tagline": "Where Style Meets Craftsmanship",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "AVERE STITCHES - Where Style Meets Craftsmanship. Experience bespoke fashion design that celebrates your unique style. From elegant traditional wear to contemporary statement pieces, we bring your fashion vision to life with precision and creativity. Based in Lagos, serving clients across Nigeria.",
+      "imagePrompt": "Photorealistic image of a modern Nigerian fashion design studio in Lagos, elegant fabric swatches in vibrant African prints and premium materials draped artistically, professional sewing equipment visible in soft focus, warm golden lighting streaming through large windows, sophisticated and creative atmosphere, high-end fashion workspace aesthetic",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "AVERE STITCHES is a premier fashion and creative design house located in the heart of Alimosho, Lagos. We specialize in creating exceptional custom garments that blend contemporary style with timeless elegance. Our team of skilled designers and tailors are passionate about transforming fabrics into wearable art that reflects your personality and lifestyle. Whether you're looking for traditional Nigerian attire, corporate wear, or special occasion outfits, we deliver quality craftsmanship with attention to every detail. At AVERE STITCHES, your style story is our inspiration.",
+      "imagePrompt": "Photorealistic scene of Nigerian fashion designers at work in a bright, modern Lagos atelier, colorful fabrics and patterns displayed on walls, designers consulting with clients, measuring tapes and sketch books visible, professional yet warm creative environment, natural daylight, authentic Nigerian fashion workspace",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Custom Fashion Design - Bespoke clothing tailored to your exact measurements and style preferences, from concept to creation.\n\nTraditional Wear - Exquisite native attire including Aso Ebi, Agbada, Kaftan, and traditional bridal wear that honors Nigerian heritage.\n\nContemporary Fashion - Modern statement pieces, corporate wear, and everyday fashion that keeps you stylish and confident.\n\nBridal & Special Occasions - Stunning wedding gowns, bridesmaid dresses, and outfits for all your special moments.\n\nAlterations & Repairs - Expert fitting adjustments and garment repairs to ensure your wardrobe always looks its best.\n\nFashion Consultation - Personalized style advice to help you discover looks that enhance your natural beauty and lifestyle.",
+      "imagePrompt": "Photorealistic collage style image showing various Nigerian fashion pieces: elegant Aso Ebi in rich colors, contemporary corporate wear on dress forms, beautiful bridal gown detail, traditional agbada fabric texture, measuring tape and sewing tools, displayed in an upscale Lagos boutique setting with professional lighting",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to elevate your wardrobe? Visit our studio in Alimosho or reach out to discuss your fashion needs. We're here to bring your style vision to life.\n\nStudio Location: NO59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Lagos\n\nArea: Alimosho, Lagos State, Nigeria\n\nCall or WhatsApp us today to schedule your consultation. Let's create something beautiful together.",
+      "imagePrompt": "Photorealistic image of a welcoming Nigerian fashion studio storefront in Lagos, modern signage, large windows showing elegant interior with fabric displays, located on a clean Lagos street, professional yet inviting atmosphere, tropical plants near entrance, warm afternoon lighting, authentic Nigerian neighborhood context",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 560 2958",
+    "email": "info@averestitches.com",
+    "address": "NO59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Alimosho, Lagos, Nigeria",
+    "whatsapp": "https://wa.me/2348035602958"
+  }
+}
