@@ -1,42 +1,49 @@
 {
-  "businessName": "AVERE STITCHES",
-  "industry": "Fashion and Creative Design",
-  "tone": "creative and sophisticated",
-  "tagline": "Where Style Meets Craftsmanship",
+  "businessName": "Pat Collections Mortgage Bank Limited",
+  "industry": "Financial Services - Mortgage Banking & Real Estate Finance",
+  "tone": "formal, authoritative, trustworthy",
+  "tagline": "Building Your Future, Financing Your Dreams",
   "sections": [
     {
       "id": "hero",
-      "name": "Hero",
-      "copy": "AVERE STITCHES - Where Style Meets Craftsmanship. Experience bespoke fashion design that celebrates your unique style. From elegant traditional wear to contemporary statement pieces, we bring your fashion vision to life with precision and creativity. Based in Lagos, serving clients across Nigeria.",
-      "imagePrompt": "Photorealistic image of a modern Nigerian fashion design studio in Lagos, elegant fabric swatches in vibrant African prints and premium materials draped artistically, professional sewing equipment visible in soft focus, warm golden lighting streaming through large windows, sophisticated and creative atmosphere, high-end fashion workspace aesthetic",
+      "name": "Hero Section",
+      "copy": "Pat Collections Mortgage Bank Limited - Your Trusted Partner in Real Estate Finance. We provide innovative mortgage solutions and real estate financing services tailored to help Nigerians own their dream homes and grow their property investments. Licensed, regulated, and committed to excellence.",
+      "imagePrompt": "Modern Nigerian family standing proudly in front of their new contemporary home in Lagos, bright daylight, professional photography, warm welcoming atmosphere, showing keys in hand, lush landscaping, aspirational yet achievable lifestyle, photorealistic 4K quality",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "AVERE STITCHES is a premier fashion and creative design house located in the heart of Alimosho, Lagos. We specialize in creating exceptional custom garments that blend contemporary style with timeless elegance. Our team of skilled designers and tailors are passionate about transforming fabrics into wearable art that reflects your personality and lifestyle. Whether you're looking for traditional Nigerian attire, corporate wear, or special occasion outfits, we deliver quality craftsmanship with attention to every detail. At AVERE STITCHES, your style story is our inspiration.",
-      "imagePrompt": "Photorealistic scene of Nigerian fashion designers at work in a bright, modern Lagos atelier, colorful fabrics and patterns displayed on walls, designers consulting with clients, measuring tapes and sketch books visible, professional yet warm creative environment, natural daylight, authentic Nigerian fashion workspace",
+      "copy": "Pat Collections Mortgage Bank Limited (also known as Pat Collections Real Estate Finance Co) is a licensed financial services institution dedicated to making property ownership accessible to Nigerians. Led by experienced capital markets professionals, we combine deep financial expertise with a genuine understanding of the Nigerian real estate market. Our mission is to provide transparent, efficient, and customer-focused mortgage banking services that empower individuals and families to achieve their homeownership goals. We are committed to upholding the highest standards of financial integrity, regulatory compliance, and customer service excellence.",
+      "imagePrompt": "Professional Nigerian banking institution office interior in Lagos, modern glass and wood reception area, corporate sophistication, staff assisting clients with documents, natural lighting through floor-to-ceiling windows, trust and professionalism conveyed, photorealistic architectural photography",
       "layout": "split"
     },
     {
       "id": "services",
       "name": "Our Services",
-      "copy": "Custom Fashion Design - Bespoke clothing tailored to your exact measurements and style preferences, from concept to creation.\n\nTraditional Wear - Exquisite native attire including Aso Ebi, Agbada, Kaftan, and traditional bridal wear that honors Nigerian heritage.\n\nContemporary Fashion - Modern statement pieces, corporate wear, and everyday fashion that keeps you stylish and confident.\n\nBridal & Special Occasions - Stunning wedding gowns, bridesmaid dresses, and outfits for all your special moments.\n\nAlterations & Repairs - Expert fitting adjustments and garment repairs to ensure your wardrobe always looks its best.\n\nFashion Consultation - Personalized style advice to help you discover looks that enhance your natural beauty and lifestyle.",
-      "imagePrompt": "Photorealistic collage style image showing various Nigerian fashion pieces: elegant Aso Ebi in rich colors, contemporary corporate wear on dress forms, beautiful bridal gown detail, traditional agbada fabric texture, measuring tape and sewing tools, displayed in an upscale Lagos boutique setting with professional lighting",
+      "copy": "Residential Mortgages: Flexible mortgage plans designed for first-time homebuyers and property upgraders, with competitive interest rates and convenient repayment terms.\n\nCommercial Real Estate Financing: Tailored financing solutions for commercial property acquisition, development, and investment opportunities.\n\nHome Equity Loans: Unlock the value in your property with our home equity financing options for renovations, education, or business expansion.\n\nMortgage Advisory: Expert guidance through every step of the mortgage process, from application to final approval, ensuring you make informed decisions.\n\nProperty Investment Financing: Specialized financing packages for real estate investors looking to expand their property portfolios.\n\nRefinancing Solutions: Competitive refinancing options to help you reduce monthly payments or access better mortgage terms.",
+      "imagePrompt": "Split-screen collage showing various Nigerian real estate scenarios: modern apartment buildings in Lagos, family signing mortgage documents with advisor, construction site with cranes, keys on property documents, calculator and financial charts, professional financial planning session, vibrant and optimistic mood, photorealistic",
       "layout": "grid"
     },
     {
+      "id": "why-choose-us",
+      "name": "Why Choose Pat Collections",
+      "copy": "Experienced Leadership: Backed by seasoned capital markets analysts who understand both finance and real estate dynamics.\n\nCompetitive Rates: We offer some of the most competitive mortgage rates in the Nigerian market, making homeownership more affordable.\n\nFast Processing: Our streamlined approval process ensures quick turnaround times, getting you into your home faster.\n\nPersonalized Service: Every client receives individual attention and customized mortgage solutions that fit their unique financial situation.\n\nTransparency: No hidden fees, no surprises. We believe in clear communication and honest dealings throughout your mortgage journey.\n\nRegulatory Compliance: Fully licensed and regulated, giving you peace of mind that your investment is secure and protected.",
+      "imagePrompt": "Nigerian professional team in business attire gathered around conference table reviewing property blueprints and financial documents, modern corporate office in Alimosho Lagos, diverse team showing expertise and collaboration, bright professional lighting, trust and competence evident, photorealistic",
+      "layout": "cards"
+    },
+    {
       "id": "contact",
-      "name": "Get In Touch",
-      "copy": "Ready to elevate your wardrobe? Visit our studio in Alimosho or reach out to discuss your fashion needs. We're here to bring your style vision to life.\n\nStudio Location: NO59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Lagos\n\nArea: Alimosho, Lagos State, Nigeria\n\nCall or WhatsApp us today to schedule your consultation. Let's create something beautiful together.",
-      "imagePrompt": "Photorealistic image of a welcoming Nigerian fashion studio storefront in Lagos, modern signage, large windows showing elegant interior with fabric displays, located on a clean Lagos street, professional yet inviting atmosphere, tropical plants near entrance, warm afternoon lighting, authentic Nigerian neighborhood context",
+      "name": "Contact Us",
+      "copy": "Ready to take the next step toward homeownership or property investment? Our experienced team at Pat Collections Mortgage Bank Limited is here to guide you through the entire process. Visit our office in Alimosho, Lagos, or reach out to us today to schedule a consultation.\n\nOffice Address: No. 59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Alimosho, Lagos, Nigeria\n\nPhone: +234 803 560 2958\n\nBusiness Hours: Monday - Friday: 8:00 AM - 5:00 PM | Saturday: 9:00 AM - 2:00 PM\n\nLet Pat Collections Mortgage Bank Limited help you finance your future. Contact us today for a free consultation and discover how we can make your real estate dreams a reality.",
+      "imagePrompt": "Professional Nigerian mortgage bank office exterior in Alimosho Lagos, welcoming entrance with clear signage for Pat Collections, modern building facade, people entering and exiting confidently, daytime photography, accessible and inviting atmosphere, Nigerian urban context, photorealistic",
       "layout": "centered"
     }
   ],
   "contact": {
     "phone": "+234 803 560 2958",
-    "email": "info@averestitches.com",
-    "address": "NO59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Alimosho, Lagos, Nigeria",
+    "email": "info@patcollections.com",
+    "address": "No. 59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Alimosho, Lagos, Nigeria",
     "whatsapp": "https://wa.me/2348035602958"
   }
 }
