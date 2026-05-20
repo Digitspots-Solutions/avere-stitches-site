@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVERE STITCHES - Where Style Meets Craftsmanship</title>
+    <title>Pat Collections Mortgage Bank Limited - Building Your Future, Financing Your Dreams</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Karla:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --color-primary: #010101;
-            --color-accent: #b0ff2a;
-            --color-bg: #F8F8F8;
-            --color-text: #0A0A0A;
-            --color-surface: #191717;
-            --color-secondary-accent: #f82525;
-            --font-display: 'Oswald', sans-serif;
+            --color-primary: #1c130a;
+            --color-accent: #b18137;
+            --color-bg: #F6F2EC;
+            --color-text: #181008;
+            --color-surface: #291f14;
+            --color-secondary-accent: #879496;
+            --font-display: 'Cormorant Garamond', serif;
             --font-body: 'Karla', sans-serif;
-            --border-radius: 0px;
+            --border-radius: 4px;
         }
 
         * {
@@ -34,37 +34,36 @@
             font-family: var(--font-body);
             color: var(--color-text);
             background-color: var(--color-bg);
-            line-height: 1.6;
-            overflow-x: hidden;
+            line-height: 1.7;
+            position: relative;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' /%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.02' /%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9999;
+        }
+
+        h1, h2, h3, h4 {
             font-family: var(--font-display);
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            line-height: 1.1;
-        }
-
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(24px);
-            }
-            to {
-                opacity: 1;
-                transform: none;
-            }
+            font-weight: 600;
+            line-height: 1.2;
         }
 
         nav {
             position: sticky;
             top: 0;
-            background: rgba(248, 248, 248, 0.9);
+            background: rgba(246, 242, 236, 0.92);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 0 var(--color-primary);
+            padding: 1.2rem 5%;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         .nav-container {
@@ -75,49 +74,31 @@
             align-items: center;
         }
 
-        .logo {
+        .nav-logo {
             font-family: var(--font-display);
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
             color: var(--color-primary);
             text-decoration: none;
-            letter-spacing: 0.1em;
         }
 
         .nav-links {
             display: flex;
+            gap: 2.5rem;
             list-style: none;
-            gap: 2rem;
         }
 
         .nav-links a {
             text-decoration: none;
             color: var(--color-text);
             font-weight: 500;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 0.05em;
+            font-size: 0.95rem;
             transition: color 0.3s ease;
-            position: relative;
+            letter-spacing: 0.3px;
         }
 
         .nav-links a:hover {
             color: var(--color-accent);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background: var(--color-accent);
-            transition: width 0.3s ease;
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
         }
 
         .mobile-menu-btn {
@@ -154,7 +135,7 @@
             width: 300px;
             height: calc(100vh - 70px);
             background: var(--color-bg);
-            box-shadow: -4px 0 0 var(--color-primary);
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
             padding: 2rem;
@@ -177,8 +158,6 @@
             color: var(--color-text);
             font-size: 1.1rem;
             font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
             transition: color 0.3s ease;
             display: block;
             padding: 0.5rem 0;
@@ -188,101 +167,126 @@
             color: var(--color-accent);
         }
 
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        section {
+            animation: fadeUp 0.6s ease forwards;
+        }
+
         #hero {
+            animation-delay: 0s;
+        }
+
+        #about {
+            animation-delay: 0.1s;
+        }
+
+        #services {
+            animation-delay: 0.2s;
+        }
+
+        #why-choose-us {
+            animation-delay: 0.3s;
+        }
+
+        #contact {
+            animation-delay: 0.4s;
+        }
+
+        .hero {
             position: relative;
             height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
+            color: white;
             overflow: hidden;
-            animation: fadeUp 0.6s ease forwards;
         }
 
-        #hero::before {
-            content: '';
+        .hero-bg {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('https://images.pexels.com/photos/32184490/pexels-photo-32184490.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-            background-size: cover;
-            background-position: center;
-            z-index: -2;
+            object-fit: cover;
+            z-index: 1;
         }
 
-        #hero::after {
-            content: '';
+        .hero-overlay {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.55);
-            z-index: -1;
+            z-index: 2;
         }
 
         .hero-content {
-            max-width: 1200px;
-            padding: 2rem;
-            color: white;
-            z-index: 1;
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 0 5%;
         }
 
-        .hero-content h1 {
-            font-size: clamp(3rem, 10vw, 8rem);
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: var(--color-accent);
-            text-shadow: 4px 4px 0 var(--color-primary);
-            letter-spacing: 0.02em;
+            font-family: var(--font-display);
+            font-style: italic;
+            font-weight: 400;
         }
 
-        .hero-content .tagline {
-            font-size: clamp(1.2rem, 3vw, 2rem);
-            margin-bottom: 2rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-        }
-
-        .hero-content p {
-            font-size: clamp(1rem, 2vw, 1.2rem);
-            margin-bottom: 2rem;
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
-            line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1.2rem 3rem;
+            padding: 1rem 2.5rem;
             background: var(--color-accent);
-            color: var(--color-primary);
+            color: white;
             text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1.05rem;
             transition: all 0.3s ease;
-            box-shadow: 6px 6px 0 var(--color-primary);
-            font-size: 1.1rem;
+            letter-spacing: 0.5px;
         }
 
         .cta-button:hover {
-            transform: translate(3px, 3px);
-            box-shadow: 3px 3px 0 var(--color-primary);
+            background: #8f6829;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(177, 129, 55, 0.4);
         }
 
-        section {
-            padding: 80px 2rem;
+        .about {
+            padding: 80px 5%;
             max-width: 1400px;
             margin: 0 auto;
-        }
-
-        #about {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.1s;
         }
 
         .about-container {
@@ -294,37 +298,39 @@
 
         .about-image {
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: cover;
-            box-shadow: 8px 8px 0 var(--color-primary);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
 
-        .about-text h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 2rem;
+        .about-content h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
             color: var(--color-primary);
-            border-left: 8px solid var(--color-accent);
-            padding-left: 1rem;
         }
 
-        .about-text p {
-            font-size: 1.1rem;
+        .about-content p {
+            font-size: 1.05rem;
             line-height: 1.8;
             color: var(--color-text);
         }
 
-        #services {
-            background: var(--color-surface);
-            color: white;
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.2s;
+        .services {
+            padding: 80px 5%;
+            background: white;
         }
 
-        #services h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services h2 {
+            font-size: 2.8rem;
             margin-bottom: 3rem;
             text-align: center;
-            color: var(--color-accent);
+            color: var(--color-primary);
         }
 
         .services-grid {
@@ -335,113 +341,135 @@
         }
 
         .service-card {
-            background: var(--color-primary);
+            background: var(--color-bg);
             padding: 2rem;
-            border: 3px solid var(--color-accent);
-            transition: transform 0.3s ease;
+            border-radius: var(--border-radius);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 8px 8px 0 var(--color-accent);
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: var(--color-accent);
+            color: var(--color-primary);
         }
 
         .service-card p {
             font-size: 1rem;
-            line-height: 1.6;
+            line-height: 1.7;
+            color: var(--color-text);
         }
 
-        #contact {
-            animation: fadeUp 0.6s ease forwards;
-            animation-delay: 0.3s;
-            text-align: center;
-        }
-
-        #contact h2 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            margin-bottom: 2rem;
-            color: var(--color-primary);
-        }
-
-        .contact-content {
-            max-width: 800px;
+        .why-choose {
+            padding: 80px 5%;
+            max-width: 1400px;
             margin: 0 auto;
         }
 
-        .contact-content p {
-            font-size: 1.1rem;
+        .why-choose h2 {
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            color: var(--color-primary);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .why-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .why-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+        }
+
+        .why-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--color-text);
+        }
+
+        .contact {
+            padding: 80px 5%;
+            background: var(--color-surface);
+            color: white;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            color: white;
+        }
+
+        .contact p {
+            font-size: 1.05rem;
             line-height: 1.8;
             margin-bottom: 2rem;
         }
 
-        .contact-info {
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
             margin: 3rem 0;
-            padding: 2rem;
-            background: var(--color-surface);
-            color: white;
-            border: 4px solid var(--color-accent);
+            align-items: center;
         }
 
-        .contact-info p {
-            margin-bottom: 1rem;
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
             font-size: 1.1rem;
         }
 
-        .contact-info a {
+        .contact-item a {
             color: var(--color-accent);
             text-decoration: none;
-            font-weight: 600;
             transition: color 0.3s ease;
         }
 
-        .contact-info a:hover {
-            color: white;
+        .contact-item a:hover {
+            color: #d49a47;
         }
 
-        .contact-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
-        .contact-button {
-            padding: 1rem 2rem;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.3s ease;
+        .whatsapp-btn {
             display: inline-block;
-        }
-
-        .phone-button {
-            background: var(--color-primary);
-            color: var(--color-accent);
-            border: 3px solid var(--color-accent);
-        }
-
-        .phone-button:hover {
-            background: var(--color-accent);
-            color: var(--color-primary);
-        }
-
-        .email-button {
-            background: var(--color-secondary-accent);
+            padding: 1rem 2.5rem;
+            background: #25D366;
             color: white;
-            border: 3px solid var(--color-primary);
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
         }
 
-        .email-button:hover {
-            background: var(--color-primary);
-            color: var(--color-secondary-accent);
+        .whatsapp-btn:hover {
+            background: #20BA5A;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
         }
 
         .whatsapp-float {
@@ -455,47 +483,50 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 4px 4px 0 var(--color-primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
             z-index: 999;
+            cursor: pointer;
             transition: all 0.3s ease;
-            text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 6px 6px 0 var(--color-primary);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
         }
 
-        .whatsapp-float::before {
-            content: '💬';
-            font-size: 2rem;
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: white;
         }
 
         footer {
             background: var(--color-primary);
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-            border-top: 4px solid var(--color-accent);
-        }
-
-        footer p {
-            font-size: 1rem;
-            letter-spacing: 0.05em;
+            padding: 2rem 5%;
+            font-size: 0.95rem;
         }
 
         @media (max-width: 768px) {
             .nav-links {
                 display: none;
             }
-
+            
             .mobile-menu-btn {
                 display: flex;
             }
 
-            section {
-                padding: 48px 1.5rem;
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
             }
 
             .about-container {
@@ -504,39 +535,55 @@
             }
 
             .about-image {
-                height: 400px;
+                height: 350px;
             }
 
-            .services-grid {
+            .about-content h2,
+            .services h2,
+            .why-choose h2,
+            .contact h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 48px 5%;
+            }
+
+            .services,
+            .contact {
+                padding: 48px 5%;
+            }
+
+            .services-grid,
+            .why-grid {
                 grid-template-columns: 1fr;
             }
 
-            .contact-buttons {
-                flex-direction: column;
-            }
-
-            .contact-button {
-                width: 100%;
+            .contact-details {
+                align-items: flex-start;
+                text-align: left;
             }
 
             .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
                 width: 50px;
                 height: 50px;
+                bottom: 20px;
+                right: 20px;
             }
 
-            .whatsapp-float::before {
-                font-size: 1.5rem;
+            .whatsapp-float svg {
+                width: 26px;
+                height: 26px;
             }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
-            section {
-                padding: 64px 2rem;
+            .hero h1 {
+                font-size: 3rem;
             }
 
-            .services-grid {
+            .services-grid,
+            .why-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
@@ -545,11 +592,12 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="#" class="logo">AVERE STITCHES</a>
+            <a href="#hero" class="nav-logo">Pat Collections</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -558,91 +606,135 @@
                 <span></span>
             </div>
         </div>
+        <div class="mobile-menu">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-
-    <section id="hero">
+    <section id="hero" class="hero">
+        <img src="https://images.pexels.com/photos/28375898/pexels-photo-28375898.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Pat Collections Mortgage Bank" class="hero-bg">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>AVERE STITCHES</h1>
-            <p class="tagline">Where Style Meets Craftsmanship</p>
-            <p>Experience bespoke fashion design that celebrates your unique style. From elegant traditional wear to contemporary statement pieces, we bring your fashion vision to life with precision and creativity. Based in Lagos, serving clients across Nigeria.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Pat Collections Mortgage Bank Limited</h1>
+            <p class="hero-tagline">Building Your Future, Financing Your Dreams</p>
+            <p>Your Trusted Partner in Real Estate Finance. We provide innovative mortgage solutions and real estate financing services tailored to help Nigerians own their dream homes and grow their property investments. Licensed, regulated, and committed to excellence.</p>
+            <a href="#contact" class="cta-button">Get Started Today</a>
         </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="about">
         <div class="about-container">
-            <img src="https://images.pexels.com/photos/35689783/pexels-photo-35689783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="AVERE STITCHES Fashion Design Studio" class="about-image">
-            <div class="about-text">
+            <img src="https://images.pexels.com/photos/18471480/pexels-photo-18471480.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="About Pat Collections" class="about-image">
+            <div class="about-content">
                 <h2>About Us</h2>
-                <p>AVERE STITCHES is a premier fashion and creative design house located in the heart of Alimosho, Lagos. We specialize in creating exceptional custom garments that blend contemporary style with timeless elegance. Our team of skilled designers and tailors are passionate about transforming fabrics into wearable art that reflects your personality and lifestyle. Whether you're looking for traditional Nigerian attire, corporate wear, or special occasion outfits, we deliver quality craftsmanship with attention to every detail. At AVERE STITCHES, your style story is our inspiration.</p>
+                <p>Pat Collections Mortgage Bank Limited (also known as Pat Collections Real Estate Finance Co) is a licensed financial services institution dedicated to making property ownership accessible to Nigerians. Led by experienced capital markets professionals, we combine deep financial expertise with a genuine understanding of the Nigerian real estate market. Our mission is to provide transparent, efficient, and customer-focused mortgage banking services that empower individuals and families to achieve their homeownership goals. We are committed to upholding the highest standards of financial integrity, regulatory compliance, and customer service excellence.</p>
             </div>
         </div>
     </section>
 
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Custom Fashion Design</h3>
-                <p>Bespoke clothing tailored to your exact measurements and style preferences, from concept to creation.</p>
-            </div>
-            <div class="service-card">
-                <h3>Traditional Wear</h3>
-                <p>Exquisite native attire including Aso Ebi, Agbada, Kaftan, and traditional bridal wear that honors Nigerian heritage.</p>
-            </div>
-            <div class="service-card">
-                <h3>Contemporary Fashion</h3>
-                <p>Modern statement pieces, corporate wear, and everyday fashion that keeps you stylish and confident.</p>
-            </div>
-            <div class="service-card">
-                <h3>Bridal & Special Occasions</h3>
-                <p>Stunning wedding gowns, bridesmaid dresses, and outfits for all your special moments.</p>
-            </div>
-            <div class="service-card">
-                <h3>Alterations & Repairs</h3>
-                <p>Expert fitting adjustments and garment repairs to ensure your wardrobe always looks its best.</p>
-            </div>
-            <div class="service-card">
-                <h3>Fashion Consultation</h3>
-                <p>Personalized style advice to help you discover looks that enhance your natural beauty and lifestyle.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Get In Touch</h2>
-        <div class="contact-content">
-            <p>Ready to elevate your wardrobe? Visit our studio in Alimosho or reach out to discuss your fashion needs. We're here to bring your style vision to life.</p>
-            <div class="contact-info">
-                <p><strong>Studio Location:</strong> NO59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Lagos</p>
-                <p><strong>Area:</strong> Alimosho, Lagos State, Nigeria</p>
-                <p><strong>Phone:</strong> <a href="tel:+2348035602958">+234 803 560 2958</a></p>
-                <p><strong>Email:</strong> <a href="mailto:info@averestitches.com">info@averestitches.com</a></p>
-            </div>
-            <p>Call or WhatsApp us today to schedule your consultation. Let's create something beautiful together.</p>
-            <div class="contact-buttons">
-                <a href="tel:+2348035602958" class="contact-button phone-button">Call Now</a>
-                <a href="mailto:info@averestitches.com" class="contact-button email-button">Send Email</a>
+    <section id="services" class="services">
+        <div class="services-container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Residential Mortgages</h3>
+                    <p>Flexible mortgage plans designed for first-time homebuyers and property upgraders, with competitive interest rates and convenient repayment terms.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Commercial Real Estate Financing</h3>
+                    <p>Tailored financing solutions for commercial property acquisition, development, and investment opportunities.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Home Equity Loans</h3>
+                    <p>Unlock the value in your property with our home equity financing options for renovations, education, or business expansion.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Mortgage Advisory</h3>
+                    <p>Expert guidance through every step of the mortgage process, from application to final approval, ensuring you make informed decisions.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Property Investment Financing</h3>
+                    <p>Specialized financing packages for real estate investors looking to expand their property portfolios.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Refinancing Solutions</h3>
+                    <p>Competitive refinancing options to help you reduce monthly payments or access better mortgage terms.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/2348035602958" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"></a>
+    <section id="why-choose-us" class="why-choose">
+        <h2>Why Choose Pat Collections</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <h3>Experienced Leadership</h3>
+                <p>Backed by seasoned capital markets analysts who understand both finance and real estate dynamics.</p>
+            </div>
+            <div class="why-card">
+                <h3>Competitive Rates</h3>
+                <p>We offer some of the most competitive mortgage rates in the Nigerian market, making homeownership more affordable.</p>
+            </div>
+            <div class="why-card">
+                <h3>Fast Processing</h3>
+                <p>Our streamlined approval process ensures quick turnaround times, getting you into your home faster.</p>
+            </div>
+            <div class="why-card">
+                <h3>Personalized Service</h3>
+                <p>Every client receives individual attention and customized mortgage solutions that fit their unique financial situation.</p>
+            </div>
+            <div class="why-card">
+                <h3>Transparency</h3>
+                <p>No hidden fees, no surprises. We believe in clear communication and honest dealings throughout your mortgage journey.</p>
+            </div>
+            <div class="why-card">
+                <h3>Regulatory Compliance</h3>
+                <p>Fully licensed and regulated, giving you peace of mind that your investment is secure and protected.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <p>Ready to take the next step toward homeownership or property investment? Our experienced team at Pat Collections Mortgage Bank Limited is here to guide you through the entire process. Visit our office in Alimosho, Lagos, or reach out to us today to schedule a consultation.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <strong>Office Address:</strong> No. 59A, Abiodun Obayemi Street, Ikola Odunsi via Ipaja, Alimosho, Lagos, Nigeria
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> <a href="tel:+2348035602958">+234 803 560 2958</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:info@patcollections.com">info@patcollections.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Business Hours:</strong> Monday - Friday: 8:00 AM - 5:00 PM | Saturday: 9:00 AM - 2:00 PM
+                </div>
+            </div>
+            <p>Let Pat Collections Mortgage Bank Limited help you finance your future. Contact us today for a free consultation and discover how we can make your real estate dreams a reality.</p>
+            <a href="https://wa.me/2348035602958" class="whatsapp-btn" target="_blank">Chat on WhatsApp</a>
+        </div>
+    </section>
+
+    <a href="https://wa.me/2348035602958" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 8.188-2.113c2.35 1.275 5.012 1.963 7.812 1.963 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.5c-2.475 0-4.912-0.688-7.025-1.987l-0.5-0.3-5.188 1.338 1.363-5.075-0.325-0.513c-1.425-2.25-2.175-4.838-2.175-7.463 0-7.588 6.175-13.762 13.762-13.762s13.762 6.175 13.762 13.762-6.087 13.762-13.675 13.762zM22.1 18.438c-0.375-0.188-2.225-1.1-2.575-1.225s-0.6-0.188-0.85 0.188c-0.25 0.375-0.962 1.225-1.175 1.475s-0.438 0.288-0.813 0.1c-0.375-0.188-1.587-0.587-3.025-1.875-1.125-1.013-1.875-2.25-2.1-2.625s-0.025-0.575 0.163-0.762c0.175-0.175 0.375-0.45 0.563-0.675s0.25-0.375 0.375-0.625 0.063-0.475-0.025-0.675c-0.087-0.2-0.85-2.050-1.163-2.8-0.3-0.738-0.613-0.638-0.85-0.65-0.213-0.012-0.462-0.012-0.712-0.012s-0.65 0.1-0.987 0.475c-0.338 0.375-1.287 1.262-1.287 3.075s1.325 3.563 1.513 3.813c0.188 0.25 2.625 4.012 6.35 5.625 0.887 0.387 1.575 0.612 2.113 0.787 0.887 0.275 1.7 0.237 2.338 0.15 0.712-0.1 2.225-0.913 2.538-1.788s0.313-1.625 0.213-1.788c-0.1-0.175-0.35-0.275-0.725-0.463z"/>
+        </svg>
+    </a>
 
     <footer>
-        <p>&copy; 2025 AVERE STITCHES. All rights reserved.</p>
+        <p>&copy; 2024 Pat Collections Mortgage Bank Limited. All rights reserved.</p>
     </footer>
 
     <script>
+        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -652,6 +744,7 @@
                 mobileMenu.classList.toggle('active');
             });
 
+            // Close mobile menu when clicking a link
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
